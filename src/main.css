@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Alpha Wood Font";
+  src: url("./assets/font/AlphaWood.ttf");
+}
+@font-face {
+  font-family: "Wood Look";
+  src: url("./assets/font/WoodLook.ttf");
+}
+
+body {
+  font: 15px "Century Gothic", Futura, sans-serif;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+.board {
+  background-image: url("./assets/img/wood_bg.jpg");
+  border-radius: 5%;
+  padding: 15px;
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  width: 150px;
+  height: 230px;
+  transform: translate(-50%, -50%);
+}
+
+.board-row {
+  position: relative;
+  left: 63%;
+  transform: translate(-50%);
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  text-align: center;
+  font-size: 27px !important;
+  font-family: "Wood Look", Verdana, Tahoma;
+  color: black;
+  margin-bottom: 7px;
+}
+
+button.status {
+  background: rgb(83, 64, 4);
+  background-image: url("./assets/img/plank_button.png");
+  background-size: 99%;
+  height: 54px;
+  border: 0px !important;
+}
+
+.square {
+  background: rgba(255, 255, 255, 0.644);
+  border: 1px solid rgb(130, 82, 1);
+  float: left;
+  font-family: "Alpha Wood Font";
+  color: black;
+  font-size: 24px;
+  line-height: 34px;
+  height: 34px;
+  margin: 1px 1px 1px 1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+  transition: 0.2s;
+}
+
+.square:hover {
+  background: rgba(122, 92, 45, 0.753);
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.mt {
+  margin-top: 10px;
+}
