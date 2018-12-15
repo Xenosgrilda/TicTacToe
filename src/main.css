@@ -17,10 +17,13 @@ ul {
 }
 .board {
   background-image: url("./assets/img/wood_bg.jpg");
-  border-radius: 5%;
+  border-image-source: url("./assets/img/wooden_frame.jpg");
+  border-image-slice: 47 46;
+  border-style: solid;
+  border-width: 20px;
   padding: 15px;
   position: fixed;
-  top: 25%;
+  top: 270px;
   left: 50%;
   width: 150px;
   height: 230px;
@@ -89,7 +92,10 @@ button.status {
 }
 
 .game-info {
-  margin-left: 20px;
+  border: 1px solid black;
+  position: fixed;
+  top: 120px;
+  left: 200px;
 }
 
 .mt {
