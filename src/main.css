@@ -11,9 +11,22 @@ body {
   font: 15px "Century Gothic", Futura, sans-serif;
 }
 
-ol,
 ul {
   padding-left: 30px;
+}
+
+ol{
+  padding: 10px;
+  margin-bottom: -20px;
+  list-style-type: none;
+}
+
+ol > li > button{
+  width: 200px;
+  background: rgba(179, 117, 59, 0.5);
+  color: white;
+  font-family: "Wood Look", Verdana, Tahoma;
+  font-size: 13px;
 }
 .board {
   background-image: url("./assets/img/wood_bg.jpg");
@@ -27,7 +40,7 @@ ul {
   left: 50%;
   width: 150px;
   height: 230px;
-  transform: translate(-50%, -50%);
+  transform: translate(-110%, -50%);
 }
 
 .board-row {
@@ -86,16 +99,15 @@ button.status {
   background: #ddd;
 }
 
-.game {
-  display: flex;
-  flex-direction: row;
-}
-
 .game-info {
-  border: 1px solid black;
+  background-image: url('./assets/img/wood_info_bg.jpg');
+  border-image-source: url("./assets/img/wooden_frame.jpg");
+  border-style: inset;
+  border-width: 15px;
+  border-image-slice: 47 46;
   position: fixed;
   top: 120px;
-  left: 200px;
+  left: 55%;
 }
 
 .mt {
